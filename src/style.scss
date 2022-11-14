@@ -1,0 +1,12 @@
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+@use './assets/scss/partials/variables.scss' as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bb-primary;
+}
