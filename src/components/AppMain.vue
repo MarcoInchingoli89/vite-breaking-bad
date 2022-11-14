@@ -17,12 +17,12 @@ export default {
             <div class="characters_found m-auto"></div>
             <div class="characters_container d-flex justify-content-center py-3 px-3">
                 <div class="row row-cols-2 row-cols-md-5">
-                    <div v-for="character in store.characters" class="col">
+                    <!-- <div v-for="character in store.characters" class="col">
                         <div class="character_card">
                             <img :src="character.image" alt="">
                             <h3>{{ character.name }}</h3>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

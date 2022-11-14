@@ -19,10 +19,10 @@ export default {
       axios.get(url)
         .then(response => {
           console.log(response.data);
-          this.store.characters = response.data.results
+          /* this.store.characters = response.data.results
           console.log(this.store.characters)
           this.store.status = response.data.info
-          console.log(this.store.info)
+          console.log(this.store.info) */
         })
     }
   },
