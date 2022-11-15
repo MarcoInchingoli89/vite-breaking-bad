@@ -30,6 +30,7 @@ export default {
       console.log(selected)
       const url = `${this.store.api_url}?category=${selected}`
       console.log(url)
+      this.callApi(url)
     }
   },
   mounted() {
