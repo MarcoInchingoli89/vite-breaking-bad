@@ -6,6 +6,11 @@ export default {
         return {
             store
         }
+    },
+    computed: {
+        totalCharacters() {
+            return this.store.characters.length;
+        }
     }
 }
 </script>
@@ -19,7 +24,10 @@ export default {
             <option value="Better+Call+Saul">Better Call Saul</option>
         </select>
         <div class="main_app bg-white py-4">
-            <div class="characters_found m-auto"></div>
+            <div class="characters_found m-auto">
+                <h5 class="text-white py-2 px-2" v-if="store.characters !== null">Found {{ totalCharacters }} characters
+                </h5>
+            </div>
             <div class="characters_container d-flex justify-content-center py-3 px-3">
                 <div class="row row-cols-2 row-cols-md-5 gap-4 justify-content-center">
                     <div v-for="character in store.characters" class="col">
