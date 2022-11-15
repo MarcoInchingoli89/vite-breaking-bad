@@ -33,7 +33,8 @@ export default {
 
 <template>
   <AppHeader />
-  <div class="container">
+  <AppMain />
+  <!-- <div class="container">
     <select class="form-select mb-4" aria-label="Default select example">
       <option selected>Select category</option>
       <option value="1">One</option>
@@ -53,7 +54,7 @@ export default {
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <!-- <style lang="scss" scoped>

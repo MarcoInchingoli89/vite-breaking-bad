@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <!-- <div class="container">
+    <div class="container">
         <select class="form-select mb-4" aria-label="Default select example">
             <option selected>Select category</option>
             <option value="1">One</option>
@@ -21,32 +21,35 @@ export default {
         <div class="main_app bg-white py-4">
             <div class="characters_found m-auto"></div>
             <div class="characters_container d-flex justify-content-center py-3 px-3">
-                <div class="row row-cols-2 row-cols-md-5">
+                <div class="row row-cols-2 row-cols-md-5 gap-4 justify-content-center">
                     <div v-for="character in store.characters" class="col">
-                        <div class="character_card">
-                            <img src="" alt="">
-                            <h3>{{ character.name }}</h3>
+                        <div class="character_card card rounded-0 h-100 bg-dark text-white p-2">
+                            <img class="text-center" :src="character.img" alt="">
+                            <h6 class="py-1">{{ character.name }}</h6>
+                            <div class="category py-2">{{ character.category }}</div>
+                            <div class="status">{{ character.status }}</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </template>
 
-<!-- <style lang="scss" scoped>
+<style lang="scss" scoped>
 @use '../assets/scss/partials/variables.scss' as *;
 
 .container {
     width: 70%;
 
     .form-select {
-        width: 15%;
+        width: 20%;
     }
 }
 
 .main_app {
-    height: 500px;
+
+    width: 80%;
 
     .characters_found {
         height: 50px;
@@ -56,12 +59,10 @@ export default {
 }
 
 .characters_container {
-    width: 90%;
 
     .col {
-        height: 100px;
-        width: 50px;
+        width: 150px;
         background-color: $bb-primary;
     }
 }
-</style> -->
+</style>
