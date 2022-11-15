@@ -3,7 +3,6 @@ import {
 } from 'vue'
 
 export const store = reactive({
-    API_URL: 'https://www.breakingbadapi.com/api/characters',
+    api_url: 'https://www.breakingbadapi.com/api/characters',
     characters: null,
-    info: null
 })

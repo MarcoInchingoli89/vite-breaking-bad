@@ -2,11 +2,16 @@
 import { store } from '../../src/store'
 export default {
     name: 'AppMain',
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
 <template>
-    <div class="container">
+    <!-- <div class="container">
         <select class="form-select mb-4" aria-label="Default select example">
             <option selected>Select category</option>
             <option value="1">One</option>
@@ -17,19 +22,19 @@ export default {
             <div class="characters_found m-auto"></div>
             <div class="characters_container d-flex justify-content-center py-3 px-3">
                 <div class="row row-cols-2 row-cols-md-5">
-                    <!-- <div v-for="character in store.characters" class="col">
+                    <div v-for="character in store.characters" class="col">
                         <div class="character_card">
-                            <img :src="character.image" alt="">
+                            <img src="" alt="">
                             <h3>{{ character.name }}</h3>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 @use '../assets/scss/partials/variables.scss' as *;
 
 .container {
@@ -59,4 +64,4 @@ export default {
         background-color: $bb-primary;
     }
 }
-</style>
+</style> -->
