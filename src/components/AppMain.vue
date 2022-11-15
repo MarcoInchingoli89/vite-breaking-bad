@@ -12,11 +12,11 @@ export default {
 
 <template>
     <div class="container">
-        <select class="form-select mb-4" aria-label="Default select example">
-            <option selected>Select category</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+        <select v-model="store.selected" @change="$emit('filter')" class="form-select mb-4"
+            aria-label="Default select example">
+            <option disabled value="">Select category</option>
+            <option value="Breaking+Bad">Breaking Bad</option>
+            <option value="Better+Call+Saul">Better Call Saul</option>
         </select>
         <div class="main_app bg-white py-4">
             <div class="characters_found m-auto"></div>
